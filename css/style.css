@@ -1,0 +1,243 @@
+body,html{
+    margin: 0px, 0px;
+}
+body{
+    width: 100%;
+
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: #56b19c;
+}
+
+.full-bg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.content-center{
+    position: relative;
+    min-height: 60vh;
+    min-width : 70%;
+    background: #2aa599;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.examcik{
+    color: darkblue;
+    text-shadow: 0px 1px 0px #ccc;
+}
+.table{
+    color: darkblue;
+    text-shadow: 0px 1px 0px #999;
+}
+.exam-main-content{
+    min-height: 60vh;
+}
+.pagination{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item .page-link{
+    /* background-color: red; */
+    height: 30px;
+    max-width: 30px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-c{
+    background: #2aa599;
+}
+.timercount{
+    position: relative;
+    color: aliceblue;
+    padding: 6px;
+    /* height: 50px;
+    width: 50px; */
+    display: inline-block;
+    background-color: #17a2b8;
+
+}
+.sub .col-md-12{
+    height: 150px;
+    margin: 10px 0px;
+    color: aliceblue;
+    /* font-weight: bold; */
+    font-size: 20px;
+
+}
+.pagination-item{
+    cursor: pointer;
+}
+.page-link.active{
+    background-color: #17a2b8;
+    color: #f9f9f9 !important;
+    border: 1px solid #17a2b8;
+    transition: all 300ms;
+}
+.page-link.active:hover{
+    background-color: #1a8292;
+    border: 1px solid #1a8292;
+    cursor: pointer;
+
+}
+.blink{
+    animation: blink 1s ease-in 0ms infinite;
+}
+@keyframes blink{
+    0%{
+        background-color: #17a2b8;
+    }
+    100%{
+        background-color: #dc3545;
+    }
+}
+.bg-brown{
+    background-color: brown;
+}
+.bg-teal{
+    background-color: teal;
+}
+textarea{
+    resize: none;
+}
+input[type='file']{
+    
+  background: #5f9ea0cc;
+  color: #f9f9f9;
+  font-weight: normal;
+
+}
+.question-list{
+    padding: 0px;
+    margin: 0px;
+}
+.question-list li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(200,200,200,0.2);
+}
+.question-list li:nth-of-type(odd) {
+    background-color: rgba(204, 204, 204, 0.43137254901960786);
+}
+.question-list li:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+.question-list li:nth-of-type(odd):hover {
+    background-color:#ccc;
+}
+.question-list li:nth-of-type(even):hover{
+    background-color:rgba(245, 245, 245, 0.8);
+}
+
+.question-list li button{
+    margin: 0px 5px;
+}
+.question-cont{
+   margin-bottom: 30px;
+}
+.question-list-cont{ 
+   /* min-height: 76vh; */
+   height: 100vh;
+   border: 1px dotted #f4f4f4;
+   overflow-y: auto;
+}
+/* .form-group{
+    border: 1px solid red;
+    width: 100%;
+} */
+.nav-item a:active{
+    /* background: #17a2b8; */
+}
+
+.nav-item a {
+    margin: 0px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: all 300ms ease-in-out;
+}
+/* .router-link-active{ */
+    /* background-color: darkcyan; */
+    /* background: #17a2b8; */
+    /* color: #f9f9f9 !important; */
+
+/* } */
+.nav .router-link-active{
+    color: #f9f9f9 !important;
+
+    background:darkcyan;
+    text-shadow: 0px 1px 0px #999;
+}
+
+.nav-item a:not(.router-link-active) {
+    color: teal;
+}
+.nav-item a:not(.router-link-active):hover {
+    background: rgba(0, 128, 128, 0.322);
+    /* color: #f9f9f9 !important; */
+    text-shadow: 0px 1px 0px #999;
+
+}
+.bg-darkcyan{
+    background: darkcyan;
+}
+.btn-darkblue{
+    background : darkblue;
+}
+.btn-darkcyan {
+    color: #fff;
+    background-color: darkcyan;;
+    border-color: darkcyan;
+  }
+  
+  .btn-darkcyan:hover, .btn-darkcyan:active {
+    color: #fff;
+    background-color: #046f6f;
+    border-color: #046f6f;
+  }
+  .answered-question{
+    background-color: #4caf50;
+    border-color: #4caf50;
+    color: #fff !important;
+  }
+.answered-question{
+    background-color: #4fc353 !important;
+    border-color: #4caf50 !important;
+
+}
+.res-h1{
+    font-size: 3.2vw;
+
+}
+@media screen and (min-width: 601px){
+    .t {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .t {
+        font-size: 30px;
+    }
+}
+.preview-img{
+    height: 30px;
+    cursor: pointer;
+}
+/* .force-center{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
